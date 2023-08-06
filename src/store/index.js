@@ -1,14 +1,8 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
+import counterStore from "./counter";
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
-  }
-})
+    counter: counterStore,
+  },
+});
